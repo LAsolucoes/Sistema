@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - LA PDV</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/pages/login.css">
+</head>
+
+<body>
+    <main>
+        <div class="container-login">
+            <div class="card">
+                <form id="formularioLogin">
+                    <div class="logo-tipo">
+                        <img class="img-logo" alt="Imagem LogoTipo" title="LA Solucões" aria-label="Imagem LogoTipo" src="/assets/images/logo.jpg">
+                    </div>
+                    <div class="input-form">
+                        <label for="login">Login</label>
+                        <input type="text" name="login" id="login" required>
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" id="senha" required>
+                    </div>
+                    <div class="lembrar-me">
+                        <input type="checkbox" name="Lembrar-me" id="Lembrar-me">
+                        <label for="Lembrar-me">Lembrar-me</label>
+                    </div>
+                    <!-- Conteudo Dinamico JS -->
+                    <div id="erroCredenciais">
+                        <p class="usuario-senha-invalido"><i class="fa-solid fa-x"></i>&#32; Usuário ou Senha inválido</p>
+                    </div>
+                    <!-- End Conteudo Dinamico JS -->
+                    <div>
+                        <button class="btn-entrar" type="submit" title="Acessar o Sistema">Acessar</button>
+                        <button class="btn-cad-empresa"><a href="#"></a>Cadastrar Empresa</button>
+                    </div>
+                    <div>
+                        <div class="recuperar-senha">
+                            <a href="pages/recuperar-senha.html" title="Clique para Redefinir Senha">Recuperar
+                                Senha</a>
+                        </div>
+                        <div class="support">
+                            <a href="http://wa.me/5511940451410" class="wa-me" target="_blank"
+                                title="Clique aqui e Receba Suporte via WhatsApp" aria-label="Suporte via WhatsApp">
+                                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                                <span>(11) 94045-1410</span>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="container-loader" id="loader">
+            <div class="content-loader"> 
+                <div class="loader"></div>
+            </div>
+        </div>
+    </main>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

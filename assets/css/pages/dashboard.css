@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-texto);
+}
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100vw;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--black-borde);
+    padding: 10px 0px;
+  }
+  header .header-navegation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header .header-navegation i , span{
+    color: var(--gray);
+    cursor: pointer;
+  }
+  
+  header .planos {  /* Precisa de ajustas o nome da class */
+    margin-left: 30%;
+  }
+  
+  header .avatar-user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 2%;
+  }
+  header .avatar-user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--black-borde);
+  }
+  
+  section .modal-temas-background{
+      background-color: var(--background);
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 9999;
+      
+    }
+section .modal-temas{
+      background-color: var(--white);
+      border: 1px solid var(--black-borde);
+      border-radius: 5px;
+      width: 250px;
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50% ,0%);
+  }
+  
+  section .modal-temas-title{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.6rem;
+      padding: 20px;
+      color: var(--gray);
+  }
+  section .select-tema,
+  section .select-menu-lateral{
+      display: flex;
+      flex-direction: column;
+      padding: 10px 20px;
+      font-size: 0.8rem; 
+  }
+
+  section .select-menu-lateral{
+    margin-bottom: 20px;
+  }
+  section .select-tema p,
+  section .select-menu-lateral p{
+      font-weight: 500;
+      color: var(--gray);
+  }
+  
+  section .select-tema select,
+  section .select-menu-lateral select{
+     width: auto;
+     padding:5px;
+     border: 1px solid var(--black-borde);
+     border-radius: 5px;
+     margin-top: 2px;
+  }
+  section .modal-temas-footer{
+      margin-top: 10px;
+      padding: 20px;
+  }
+ section .modal-temas-footer .btn-success{
+      width: 100%;
+}
+
+aside{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    line-height: 2;
+    border-right: 1px solid var(--black-borde);
+    width: 225px;
+}
+aside .sidebar{ 
+    height: 100vw;
+    width: auto;
+    background-color: var(--white);
+}
+aside .sidebar-title{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-bottom: 1px solid var(--black-borde);
+   padding: 10px;
+}
+aside .sidebar-title img{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+}
+aside .sidebar-title i{
+    position: absolute;
+    right: -25px;
+    background-color: var(--white);
+    padding: 8px;
+    border-radius: 50%;
+    border: 1px solid var(--black-borde);
+    cursor: pointer;
+    color: var(--gray);
+}
+nav{
+    padding: 10px 20px;
+    height: 100vh;
+    overflow-y: auto;
+}
+nav a{
+    position: relative;
+}
+nav li{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    position: relative;
+}
+nav li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--gray);
+    font-size: 0.7rem;
+    cursor: pointer;
+    margin: 5px 0px;
+    padding: 0px 8px;
+    transition: 0.6s ease;
+    
+}
+nav li  span{
+    display: flex;
+    color: var(--gray);
+    cursor: pointer;
+    transition: 0.6s ease;
+}
+nav li a:hover{
+    background-color:var(--blue);
+    border-radius: 10px;
+    color: var(--white);
+}
+nav li a:hover span {
+   color: var(--white);
+}
+nav li i {
+    margin-right: 5px;
+}
+nav ul .sub-menu-sidebar{
+    margin-left: 17px;
+    border-left: 1px solid var(--gray);
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: var(--white);
+
+}
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px var(--gray);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--gray);
+    border-radius: 10px;
+    cursor: pointer;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color:var(--gray-dark);
+}
+
+.hidden{
+    display: none !important;
+}
+
+

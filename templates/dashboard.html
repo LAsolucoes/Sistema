@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashobord</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/css/pages/dashboard.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-navegation">
+            <div class="planos">
+                <button type="button" class="btn-movimentacoes" title="Mudar Tema" id="temas">Tema</button>
+            </div>
+
+            <div class="avatar-user">
+                <i class="fa-solid fa-sun hidden" title="Tema Claro" id="sun"></i>
+                <i class="fa-solid fa-moon" title="Tema Escuro" id="moon"></i>
+                <i class="fa-solid fa-expand" title="Modo Tela Cheia" id="full-screen"></i>
+                <i class="fa-regular fa-window-restore hidden" title="Sair Modo Tela Cheia" id="exit-full-screen"></i>
+                <i class="fa-solid fa-bell" title="Notificação"></i>
+                <span title="Nome do Usuário ">Administrador</span>
+                <img src="/assets/images/avatar.png" alt="Foto do Usuário" title="Foto do Usuário">
+            </div>
+        </div>
+
+    </header>
+    <section>
+        <div class="modal-temas-background hidden" id="modal-temas">
+            <div class="modal-temas">
+                <div class="modal-temas-title">
+                    <h1>TEMA</h1>
+                    <i class="fa-solid fa-x close" title="Fechar" id="btn-close-modal"></i>
+                </div>
+                <hr>
+                <div class="select-tema">
+                    <p>Tema</p>
+                    <select name="" id="select-tema" title="Selecione uma opção para Mudar Tema do Sistema">
+                        <option value="">Selecione uma opção</option>
+                        <option value="1">Claro</option>
+                        <option value="2">Escuro</option>
+                    </select>
+                </div>
+                <div class="select-menu-lateral" title="Selecione uma opção para Mudar Tema do Menu Lateral">
+                    <p>Menu Lateral</p>
+                    <select name="" id="select-tema-sidebar">
+                        <option value="">Selecione uma opção</option>
+                        <option value="1">Verde</option>
+                        <option value="2">Azul</option>
+                        <option value="3">Amarelo</option>
+                        <option value="4">Vermelho</option>
+                        <option value="5">Laranja</option>
+                        <option value="6">Roxo</option>
+                    </select>
+                </div>
+                <hr>
+                <div class="modal-temas-footer">
+                    <button type="button" class="btn btn-success" id="btn-salvar-tema-modal">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside>
+        <div id="sidebar" class="sidebar">
+            <div class="sidebar-title" id="sidebar-title">
+                <img src="/assets/images/logo.png" alt="Foto do LogoTipo" title="LogoTipo">
+                <i class="fa-solid fa-angles-left" title="Fechar Menu Lateral" id="close-sidebar"></i>
+                <i class="fa-solid fa-angles-right hidden" title="Abrir Menu Lateral" id="open-sidebar"></i>
+
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-house" id="home"></i> <span>HOME</span></a></li>
+                </ul>
+                <ul>
+                    <li id="menu-cadastros"><a href="#"><i class="fa-solid fa-address-card" title="Cadastros"></i>
+                            <span>CADASTROS</span></a>
+                        
+                            <ul id="sub-menu-cadastro" class="hidden sub-menu-sidebar">
+                                <li><a href="/pages/categorias.html"><i class="fa-solid fa-list" title="Categoria" id="categoria"></i> <span>Categoria</span></a>
+                                </li>
+                                <li><a href=""><i class="fa-regular fa-copyright" title="Marcas"></i>
+                                        <span>Marcas</span></a></li>
+                                <li><a href=""><i class="fa-solid fa-shirt" title="Produtos"></i> <span>Produtos</span></a>
+                                </li>
+                                <li><a href=""><i class="fa-solid fa-user-group"
+                                            title="Grupo de Clientes"></i><span>Categoria de Cliente</span></a></li>
+                                <li><a href=""><i class="fa-solid fa-address-book" title="Clientes"></i>
+                                        <span>Clientes</span></a></li>
+                                <li><a href=""><i class="fa-solid fa-truck-fast" title="Fornecedores"></i>
+                                        <span>Fornecedores</span></a></li>
+                                <li><a href=""><i class="fa-solid fa-user" title="Usuários"></i> <span>Usuários</span></a>
+                                </li>
+                                <li><a href=""><i class="fa-solid fa-money-check-dollar"
+                                            title="Lista de Precos"></i><span>Lista de Preços</span></a></li>
+                                <li><a href=""><i class="fa-regular fa-credit-card" title="Taxa de Cartões"></i><span>Taxa
+                                            de Cartões</span></a></li>
+                                <li><a href=""><i class="fa-solid fa-calculator" title="Taxa de Vendas"></i></i><span>Taxas
+                                            de Vendas</span></a></li>
+                                <li><a href="#"><i class="fa-solid fa-layer-group"
+                                            title="Categoria de Serviços"></i><span>Categoria de Serviços</span></a></li>
+                                <li><a href="#"><i class="fa-solid fa-screwdriver-wrench"
+                                            title="Serviços"></i><span>Serviços</span></a></li>
+                            </ul>
+                        
+
+                    </li>
+                </ul>
+
+                <ul>
+                    <li id="menu-estoque"><a href="#"><i class="fa-solid fa-cubes" title="Estoque"></i>
+                            <span>ESTOQUE</span></a>
+                        <ul id="sub-menu-estoque" class="hidden sub-menu-sidebar">
+                            <li><a href=""><i class="fa-solid fa-file-import"></i> <span>Entrada Manual</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-file-circle-check"> </i><span>Entrada Fiscal</span></a>
+                            </li>
+                            <li><a href=""><i class="fa-solid fa-file-pen"></i> <span>Nota de Saida</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-basket-shopping"></i> <span>Compras</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-envelope"></i> <span>Cotação</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-down-left-and-up-right-to-center"></i> <span>Ajuste de
+                                        Estoque</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-cart-flatbed"></i> <span>Iventários</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-unlock"></i> <span>Gerenciamento de Estoque</span></a>
+                            </li>
+                            <li><a href=""><i class="fa-solid fa-pen"></i> <span>Lista de Alterações</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-sliders"> </i><span>Movimentações</span></a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+
+            </nav>
+
+        </div>
+    </aside>
+   
+    <div class="container-loader" id="loader">
+        <div class="content-loader"> 
+          <div class="loader"></div>
+     </div>
+    </div> 
+  
+    
+   <!-- <script src="/js/dashboard.js"></script> -->
+</body>
+
+</html>

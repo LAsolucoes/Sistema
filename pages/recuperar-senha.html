@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <title>Recuperar Senha</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/pages/login.css">
+</head>
+
+<body>
+    <main>
+        <div class="container-login">
+            <div class="card">
+                <form id="formularioRecuperandoSenha">
+                    <div class="logo-tipo">
+                        <img class="img-logo" alt="Imagem LogoTipo" title="LA Solucões" aria-label="Imagem LogoTipo" src="/assets/images/logo-recuperar-senha.png">
+                    </div>
+                    <div class="input-form">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                     <!-- Conteudo Dinamico JS -->
+                    <div id="erroEmailInvalido">
+                        <p class="email-invalido"><i class="fa-solid fa-x"></i>&#32; Opss! Email Invalido</p>
+                    </div>
+                    <div id="sucessoEmailEnvidado">
+                        <p class="email-enviado"><i class="fa-solid fa-check"></i>&#32; Email enviado com a nova senha.</p>
+                    </div>
+                    <!-- End Conteudo Dinamico JS -->
+                    <div>
+                        <button type="submit" class="btn-recuperar-senha" id="btn-recuperar-senha"  title="Enviar para Recuperar Senha">Recuperar
+                            Senha</button>
+                            <button type="button" class="btn-retornar-login" id="btn-retornar-login">Voltar Tela de Login</button>
+                    </div>
+                   
+                    <div class="support">
+                        <a href="http://wa.me/5511940451410" class="wa-me" target="_blank"
+                            title="Clique aqui e Receba Suporte via WhatsApp" aria-label="Suporte via WhatsApp">
+                            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                            <span>(11) 94045-1410</span>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="container-loader" id="loader">
+            <div class="content-loader"> 
+                <div class="loader"></div>
+            </div>
+        </div>
+    </main>
+    <script src="/js/recuperar-senha.js"></script>
+</body>
+
+</html>

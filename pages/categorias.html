@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <!--  <link rel="stylesheet" href="/assets/css/cadastro-table.css"> -->
+
+
+
+</head>
+
+<body>
+    <div id="dashboard-container"></div>
+
+    <div>
+        <main>
+            <div class="container-principal">
+                <div>
+                    <a href="/pages/cadastro-categoria.html" class="submenu-link btn-new">
+                        <i class="fa-solid fa-plus"></i>Nova Categoria
+                    </a>
+                    <hr>
+                    <label for="">Pesquisar pelo nome</label>
+                    <div>
+                        <input class="pesquisar" type="text">
+                        <button class="button btn-filtrar">
+                            <i class="fa-solid fa-magnifying-glass"></i>Pesquisar
+                        </button>
+                    </div>
+                    <hr>
+                    <label>Total de Categorias Cadastradas: </label>
+                    <div>
+                        <table id="tabela-dados">
+                            <thead>
+                                <tr>
+                                    <th>AÇÕES</th>
+                                    <th>CATEGORIA</th>
+                                    <th>DELIVERY</th>
+                                    <th>CARDÁPIO</th>
+                                    <th>ATIVO</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+     <script src="/js/dashboard.js"></script>
+</body>
+
+</html>

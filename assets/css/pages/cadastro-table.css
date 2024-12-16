@@ -1,0 +1,16 @@
+.pesquisar {
+  margin-bottom: 10px;
+  width: auto;
+}
+
+.selecionar-marcas,
+.selecionar-categorias {
+  width: 120px;
+}
+.acoes-tabela {
+  padding: 10px;
+}
+hr {
+  margin-top: 15px;
+}
+

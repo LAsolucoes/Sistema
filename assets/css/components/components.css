@@ -1,0 +1,653 @@
+h4 {
+  font-family: var(--fonte-texto);
+  color: var(--gray);
+  margin-top: auto;
+}
+label , p {
+  font-family: var(--fonte-texto);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--gray) !important;
+}
+/* ICON VISUALIZAR-OCUTAR (SENHA) I */
+i.fa-eye-slash,
+.fa-eye {
+  color: var(--gray);
+  border: 2px solid var(--gray-ligth);
+  border-radius: 5px;
+  padding: 6px;
+}
+i.ocutar-icon-senha {
+  display: none;
+}
+/* DIV FEEDBECK */
+div#feedback-inativo {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--gray);
+  background-color: var(--red);
+  text-align: center;
+  color: var(--white);
+  font-size: 14px;
+  padding: 10px;
+}
+.required::after {
+  content: "*";
+  color: var(--red);
+  margin-left: 2px;
+}
+/*= INPUTS =*/
+input {
+  padding: 6px;
+  border-radius: 4px;
+  border: 2px solid var(--gray-ligth);
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.1);
+  background-color: var(--white);
+  outline: none;
+  transition: 0.4s;
+}
+input:hover {
+  background-color: var(--light);
+}
+input:focus {
+  border: 2px solid var(--blue);
+}
+input::-webkit-inner-spin-button {
+  appearance: none;
+}
+input:disabled {
+  background-color: var(--black-borde);
+  color: var(--dark);
+}
+input[readonly] {
+  background-color: var(--black-borde);
+}
+
+/*= SELECT =*/
+select {
+  padding: 5px;
+  border-radius: 3px;
+  border: 2px solid var(--gray-ligth);
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.1);
+  background-color: var(--white);
+  cursor: pointer;
+  outline: none;
+}
+select:hover {
+  background-color: var(--light);
+  /* transition: 0.4s; */
+}
+select:disabled {
+  background-color: var(--black-borde);
+  color: var(--dark);
+}
+select:focus {
+  border: 2px solid var(--blue);
+}
+
+/*= BOTOES =*/
+a,
+button {
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.4s;
+  font-size: 12px;
+  font-family: var(--fonte-texto);
+  color: var(--white);
+}
+a i {
+  margin-right: 2px;
+}
+button i {
+  margin-right: 2px;
+}
+/* BOTOES PRINCIPAIS */
+.btn-new,
+.btn-import,
+.btn-export,
+.btn-movimentacoes,
+.btn-filtrar,
+.btn-upload,
+.btn-download,
+.btn-add,
+.btn-dark {
+  padding: 6px 8px;
+}
+/*BOTOES NOVO*/
+.btn-new {
+  background-color: var(--cyan);
+}
+.btn-new:hover {
+  background-color: var(--cyan-secundary);
+}
+/* BOTOES IMPORTAÇÃO */
+.btn-import {
+  background-color: var(--red);
+}
+.btn-import:hover {
+  background-color: var(--danger);
+}
+/* BOTOES EXPORTAR */
+.btn-export {
+  background-color: var(--purple);
+}
+.btn-export:hover {
+  background-color: var(--info);
+}
+/* BOTOES MOVIMENTAÇÕES */
+.btn-movimentacoes {
+  background-color: var(--orange);
+}
+.btn-movimentacoes:hover {
+  background-color: var(--warning);
+}
+/* BOTOES DE FILTROS */
+.btn-filtrar {
+  background-color: var(--primary);
+}
+.btn-filtrar:hover {
+  background-color: var(--blue);
+}
+/* BOTOES UPLOAD */
+.btn-upload {
+  background-color: var(--cyan);
+}
+.btn-upload:hover {
+  background-color: var(--success);
+}
+/* BOTOES BAIXAR */
+.btn-download {
+  background-color: var(--indigo);
+}
+.btn-download:hover {
+  background-color: var(--info);
+}
+/*BOTOES ADICIOANR*/
+.btn-add {
+  background-color: var(--blue);
+}
+.btn-add:hover {
+  background-color: var(--primary);
+}
+/*BOTOES PRETO*/
+.btn-dark {
+  background-color: var(--dark);
+}
+.btn-dark:hover {
+  background-color: var(--gray-dark);
+}
+
+/*BOTOES SALVAR E CANCELAR | VOLTAR*/
+.btn-success,
+.btn-cancel {
+  padding: 5px 30px;
+  color: var(--white);
+  margin-top: 10px;
+}
+.btn-success {
+  background-color: var(--cyan);
+}
+.btn-success:hover {
+  background-color: var(--cyan-secundary);
+}
+.btn-cancel {
+  background-color: var(--red);
+}
+.btn-cancel:hover {
+  background-color: var(--red-secondary);
+}
+/*BOTOES AÇÕES*/
+.btn-acoes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  border-radius: 3px;
+  border: none;
+}
+.btn-acoes i {
+  font-size: 9px;
+}
+/*BOTOES EDITAR*/
+.btn-edit {
+  background-color: var(--yellow);
+}
+.btn-edit:hover {
+  background-color: var(--warning);
+}
+/*BOTOES EXCLUIR*/
+.btn-delete {
+  background-color: var(--red);
+}
+.btn-delete:hover {
+  background-color: var(--red-secondary);
+}
+/*BOTOES MOVIMENTAÇÕES*/
+.btn-movements {
+  background-color: var(--primary);
+}
+.btn-movements:hover {
+  background-color: var(--blue);
+}
+/*BOTOES DUPLICAR*/
+.btn-duplicate {
+  background-color: var(--indigo);
+}
+.btn-duplicate:hover {
+  background-color: var(--info);
+}
+/*BOTOES GERAR CODIGO DE BARRAS*/
+.btn-barcode {
+  background-color: var(--dark);
+}
+.btn-barcode:hover {
+  background-color: var(--gray-dark);
+}
+/*BOTOES WHATS-ZAP*/
+.btn-wa-me {
+  background-color: var(--teal);
+}
+.btn-wa-me:hover {
+  background-color: var(--success);
+}
+/*BOTOES BUSCAR CNPJ*/
+.btn-buscar-cnpj {
+  background-color: var(--blue);
+}
+.btn-buscar-cnpj:hover {
+  background-color: var(--gray-dark);
+}
+/*BOTOES BUSCAR CEP*/
+.btn-buscar-cep {
+  background-color: var(--blue);
+}
+.btn-buscar-cep:hover {
+  background-color: var(--gray-dark);
+}
+
+/*TOGGLE AZUL*/
+input.custom-checkbox {
+  width: 45px;
+  height: 23px;
+  appearance: none;
+  background-color: var(--light);
+  border-radius: 50px;
+  border: solid 2px var(--black-borde);
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+input.custom-checkbox:checked {
+  border: solid 2px;
+  border-color: var(--blue);
+  background-color: var(--white);
+}
+
+input.custom-checkbox:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: solid 1px var(--white);
+  border-radius: 50px;
+  background-color: var(--black-borde);
+  position: absolute;
+  top: 1px;
+  left: 0;
+  transition: 0.5s;
+}
+
+input.custom-checkbox:checked:before {
+  left: 23px;
+  background-color: var(--blue);
+  width: 15px;
+  height: 15px;
+}
+
+/*======================================================*/
+/* ===================TOGGLE VERMELHO===================*/
+/*======================================================*/
+input.custom-checkbox-red {
+  width: 45px;
+  height: 23px;
+  appearance: none;
+  background-color: var(--light);
+  border-radius: 50px;
+  border: solid 2px var(--black-borde);
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+input.custom-checkbox-red:checked {
+  border: solid 2px;
+  border-color: var(--red);
+  background-color: var(--white);
+}
+
+input.custom-checkbox-red:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: solid 1px var(--white);
+  border-radius: 50px;
+  background-color: var(--black-borde);
+  position: absolute;
+  top: 1px;
+  left: 0;
+  transition: 0.5s;
+}
+
+input.custom-checkbox-red:checked:before {
+  left: 23px;
+  background-color: var(--red);
+  width: 15px;
+  height: 15px;
+}
+/*======================================================*/
+/* ===================TOGGLE AMARELO====================*/
+/*======================================================*/
+input.custom-checkbox-warning {
+  width: 45px;
+  height: 23px;
+  appearance: none;
+  background-color: var(--light);
+  border-radius: 50px;
+  border: solid 2px var(--black-borde);
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+input.custom-checkbox-warning:checked {
+  border: solid 2px;
+  border-color: var(--warning);
+  background-color: var(--white);
+}
+
+input.custom-checkbox-warning:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: solid 1px var(--white);
+  border-radius: 50px;
+  background-color: var(--black-borde);
+  position: absolute;
+  top: 1px;
+  left: 0;
+  transition: 0.5s;
+}
+
+input.custom-checkbox-warning:checked:before {
+  left: 23px;
+  background-color: var(--warning);
+  width: 15px;
+  height: 15px;
+}
+
+/*======================================================*/
+/* ===================TOGGLE PRETO====================*/
+/*======================================================*/
+input.custom-checkbox-dark {
+  width: 45px;
+  height: 23px;
+  appearance: none;
+  background-color: var(--light);
+  border-radius: 50px;
+  border: solid 2px var(--black-borde);
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+input.custom-checkbox-dark:checked {
+  border: solid 2px;
+  border-color: var(--dark);
+  background-color: var(--white);
+}
+
+input.custom-checkbox-dark:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: solid 1px var(--white);
+  border-radius: 50px;
+  background-color: var(--black-borde);
+  position: absolute;
+  top: 1px;
+  left: 0;
+  transition: 0.5s;
+}
+
+input.custom-checkbox-dark:checked:before {
+  left: 23px;
+  background-color: var(--dark);
+  width: 15px;
+  height: 15px;
+}
+
+/*======================================================*/
+/* ===================TOGGLE VERDE======================*/
+/*======================================================*/
+.custom-checkbox-green {
+  width: 60px;
+  height: 30px;
+  appearance: none;
+  background-color: var(--light);
+  border-radius: 50px;
+  border: solid 2px var(--black-borde);
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.custom-checkbox-green:checked {
+  border: solid 2px;
+  border-color: var(--green);
+  background-color: var(--white);
+}
+
+.custom-checkbox-green:before {
+  content: "";
+  width: 25px;
+  height: 23px;
+  border: solid 1px var(--white);
+  border-radius: 50px;
+  background-color: var(--black-borde);
+  position: absolute;
+  top: 1px;
+  left: 0;
+  transition: 0.5s;
+}
+
+.custom-checkbox-green:checked:before {
+  left: 23px;
+  background-color: var(--green);
+  width: 25px;
+  height: 23px;
+}
+
+/* MODAL INFORMAÇÃO*/
+.modal-info {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 100vh;
+}
+.modal-content-info {
+  background-color: var(--white);
+  font-family: var(--fonte-texto);
+  font-size: 1rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid var(--gray);
+  width: 30%;
+}
+.modal-info h2 {
+  text-align: center;
+  font-family: var(--fonte-titulo);
+  font-size: 1.3rem;
+  font-variant: small-caps;
+}
+/*BOTAO  X*/
+.close {
+  color: var(--gray);
+  float: right;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 1s ease;
+  
+}
+
+.close:hover,
+.close:focus {
+  color: var(--red);
+  text-decoration: none;
+  cursor: pointer;
+  transform: rotate(360deg);
+}
+
+/*BOTAO INFO MODAL*/
+.fa-info {
+  background-color: var(--gray);
+  padding: 3px 7px;
+  border-radius: 2px;
+  color: var(--white);
+  margin: auto;
+  font-size: 8px;
+  cursor: pointer;
+  text-align: center;
+}
+.fa-info:hover {
+  background-color: var(--blue);
+}
+
+/*MODAL ADD*/
+.modal-add {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.modal-content-add {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--white);
+  padding: 20px;
+  border: 1px solid var(--black-borde);
+  width: 310%;
+  text-align: center;
+  border-radius: 5px;
+}
+.modal-content-add h2 {
+  font-family: var(--fonte-titulo);
+  font-size: 1.3rem;
+}
+.modal-confirmar {
+  padding: 10px;
+}
+input.add-novo {
+  width: 70%;
+  margin-bottom: 10px;
+}
+/* BOTÃO OPEN MODAL */
+button.btn-open-modal {
+  background-color: var(--blue);
+  padding: 5px 10px;
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-add-categoria:hover {
+  background-color: var(--primary);
+}
+.btn-add-subcategoria:hover {
+  background-color: var(--primary);
+}
+.btn-add-marcas:hover {
+  background-color: var(--primary);
+}
+
+/*SIM | NÃO | GERENCIAMENTO | DELIVERY*/
+.nao,
+.sim {
+  border-radius: 3px;
+  color: var(--white) !important;
+  padding: 4px;
+  text-align: center;
+  font-size: 10px;
+}
+.nao {
+  background-color: var(--red);
+}
+.sim {
+  background-color: var(--cyan);
+}
+/* ************************ LOADER ***************** */
+/*  <div class="container-loader" id="loader">
+       <div class="content-loader"> 
+         <div class="loader"></div>
+    </div>
+   </div> */
+.container-loader {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  min-width: 100vw;
+  min-height: 100vh;
+  z-index: 99999;
+}
+.content-loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid lightblue;
+  border-right-color: var(--blue);
+  animation: l2 1s infinite linear;
+}
+@keyframes l2 {
+  to {
+    transform: rotate(1turn);
+  }
+}
