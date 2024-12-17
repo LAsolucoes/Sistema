@@ -1,3 +1,7 @@
+.hidden{
+  display: none;
+}
+
 h4 {
   font-family: var(--fonte-texto);
   color: var(--gray);
@@ -482,13 +486,12 @@ input.custom-checkbox-dark:checked:before {
 
 /* MODAL INFORMAÇÃO*/
 .modal-info {
-  display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 9999;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgb(0, 0, 0, 0.8);
+  background-color: var(--background);
   width: 100vw;
   height: 100vh;
 }

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Categoria</title>
+   <link rel="stylesheet" href="/assets/css/main.css">
+   <link rel="stylesheet" href="/assets/css/pages/cadastro-new.css">
+</head>
+
+<body>
+    <div id="dashboard-container"></div>
+    <div>
+        <main>
+            <div class="container-principal">
+                <form action="" method="">
+                    <div>
+                        <h4>Nova Categoria</h4>
+                        <div id="feedback-inativo">
+                            <p>CATEGORIA INATIVA !!!</p>
+                            <p>Cadastro disponivel somente para leitura. Se necessário realizar alguma alteração,
+                                Habilite a opção 'ATIVO'.</p>
+                        </div>
+                        <hr>
+                        <label for="inp-nome" class="required">Nome</label>
+                        <div>
+                            <input type="text" class="new-cadastro" id="name-new-category" >
+                        </div>
+                        <hr>
+
+
+                        <!--Toggle Ativo-->
+                        <div class="toggle" id="toggle-atribuicoes">
+                            <div class="container-btn-atribuicoes">
+                                <div>
+                                    <label for="">Ativo:</label> <i class="fa-solid fa-info" id="open-modal-ativo" title="Click e Saiba Mais"></i>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="custom-checkbox" id="ativo" checked>
+                                </div>
+                                <!--MODAL INFO-->
+                                <div  class="modal-info hidden" id="modal-info-ativo"> 
+                                    <div class="modal-content-info">
+                                        <span class="close"></span>
+                                        <h2>ATIVO</h2>
+                                        <hr>
+                                        <p>"Ao ativar a opção <strong>'Ativo'</strong>,o Categoria ficarar Ativa."</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Toggle Delivery-->
+                            <div class="container-btn-atribuicoes">
+                                <div>
+                                    <label for="">Delivery:</label> <i class="fa-solid fa-info" id="open-modal-delivery" title="Click e Saiba Mais"></i>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="custom-checkbox" name="atribuir-delivery"
+                                        id="atribuir-delivery">
+                                </div>
+                                <!--MODAL INFO -->
+                                <div class="modal-info hidden" id="modal-info-delivery">
+                                    <div class="modal-content-info">
+                                        <span class="close"
+                                            onclick="fecharModalInfo('infoModalDelivery')">&times;</span>
+                                        <h2>ATRIBUIR AO DELIVERY</h2>
+                                        <hr>
+                                        <p>"Ao ativar a opção <strong>'Atribuir ao Delivery'</strong>,o produto ficarar
+                                            disponível no APP e Vendas de Delivery."</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Toggle Cardápio-->
+                            <div class="container-btn-atribuicoes">
+                                <div>
+                                    <label for="">Cardápio:</label> <i class="fa-solid fa-info" id="modal-cardapio-open" title="Click e Saiba Mais"></i>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="custom-checkbox" name="atribuir-cardapio"
+                                        id="atribuir-cardapio">
+                                </div>
+                                <!--MODAL INFO-->
+                                <div class="modal-info hidden" id="modal-info-cardapio">
+                                    <div class="modal-content-info">
+                                        <span class="close"
+                                            onclick="fecharModalInfo('infoModalCardapio')">&times;</span>
+                                        <h2>CARDÁPIO</h2>
+                                        <hr>
+                                        <p>"Ao ativar a opção <strong>'Cardápio'</strong>,a Categoria fica disponivel no
+                                            Visualização do Cardápio. Assim Categorias que não seja interessante ser
+                                            visualizado pelo Cliente não estaja disponivel para Visualização"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div>
+                            <a href="/pages/categorias.html" class="submenu-link button btn-cancel"><i
+                                    class="fa-solid fa-arrow-left"></i>Voltar</a>
+                            <button type="button" class="button btn-success" id="salvar"><i
+                                    class="fa-solid fa-check"></i>&nbsp;Salvar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="/js/dashboard.js"></script>
+    <script src="/js/modal.js"></script>
+    <!-- <script src="/js/toggle-ativo.js"></script>
+    <script src="/js/cadastro-categoria.js"></script> -->
+</body>
+
+</html>

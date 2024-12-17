@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
               const btnCloseSidebar = document.querySelector("#close-sidebar");
               const btnOpenSidebar = document.querySelector("#open-sidebar");
               const divSubMenu = document.querySelector("#sub-menu-cadastro")
+              const divContainerPrincipal = document.querySelector(".container-principal")
               
               function closeSidebar() {
                 btnCloseSidebar.classList.add("hidden");
@@ -35,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 divSidebar.querySelectorAll(".sub-menu-sidebar").forEach((bordaSidebar) => {
                   bordaSidebar.style.marginLeft = "0px";
                 });
+                divContainerPrincipal.style.left = "95px"
               }
               btnCloseSidebar.addEventListener("click", closeSidebar);
               
@@ -52,6 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 divSidebar.querySelectorAll(".sub-menu-sidebar").forEach((bordaSidebar) => {
                   bordaSidebar.style.marginLeft = "17px";
                 });
+                divContainerPrincipal.style.left = "240px"
               }
               btnOpenSidebar.addEventListener("click", openSidebar);
               
@@ -115,6 +118,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 divSidebar.querySelectorAll("span").forEach((spanSidebar) => {
                   spanSidebar.style.color = "var(--white)";
                 });
+                document.querySelector("nav").style.backgroundColor = "var(--dark)"
+                divContainerPrincipal.style.backgroundColor = "var(--dark)"
               }
               btnIconMoon.addEventListener("click", temaDark);
               
@@ -141,6 +146,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 divSidebar.querySelectorAll("span").forEach((spanSidebar) => {
                   spanSidebar.style.color = "var(--gray)";
                 });
+                document.querySelector("nav").style.backgroundColor = "var(--white)"
               }
               btnIconSun.addEventListener("click", temaClaro);
 
